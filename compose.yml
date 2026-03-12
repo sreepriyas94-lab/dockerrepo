@@ -1,0 +1,9 @@
+version: "3"
+services:
+  nginx:
+    image: nginx
+    container_name: cont100
+
+  ubuntu:
+    image: ubuntu
+    container_name: cont200

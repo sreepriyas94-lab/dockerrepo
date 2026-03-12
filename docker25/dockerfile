@@ -1,0 +1,5 @@
+FROM python:3.14.2
+WORKDIR /docker25
+COPY /docker25 .
+CMD ["python", "app.py"]
+EXPOSE 5000

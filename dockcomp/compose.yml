@@ -1,0 +1,21 @@
+services:
+  ubuntu:
+    image: ubuntu
+    container_name: ubuntu1
+    command: sleep infinity
+    networks:
+      - docnet
+    ports:
+      - "8010:80"
+
+  nginx:
+    image: nginx
+    container_name: nginx1
+    networks:
+      - docnet
+    ports:
+      - "8011:80"
+
+networks:
+  docnet:
+    external: true
